@@ -23,4 +23,7 @@ public interface EveGetSell {
 @GET ("/market/types/")
     Call <Eveimg> find_img();
 
+    @GET ("/market/groups")
+        Call <>
+
 }
