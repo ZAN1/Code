@@ -10,7 +10,10 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 
+import java.util.Collections;
+
 import dk.tv2.eveapi.R;
+import dk.tv2.eveapi.Regne.Soter;
 import dk.tv2.eveapi.holders.Evejitatrit;
 import dk.tv2.eveapi.holders.Item;
 
@@ -18,7 +21,7 @@ import dk.tv2.eveapi.holders.Item;
  * Created by cfr on 24-04-2017.
  */
 
-public class EveAdapter extends RecyclerView.Adapter<EveAdapter.holder> {
+public class EveAdapter extends RecyclerView.Adapter<EveAdapter.holder>  {
 
     private Evejitatrit tritlist ;
     private LayoutInflater inflater ;
@@ -44,15 +47,15 @@ public class EveAdapter extends RecyclerView.Adapter<EveAdapter.holder> {
 
 
 
-       // tritlist.getItems().sort(new Soter());
+//        tritlist.getItems().sort(new Soter());
 //        Collections.sort(tritlist.getItems());
 
-//        Collections.sort(tritlist.getItems(), new Soter());
-//        this.tritlist.getItems().get(0).getPrice();
+        Collections.sort(tritlist.getItems(), new Soter());
+        this.tritlist.getItems().get(0).getPrice();
 
 //        String a = "thomas";
 //        String b = "thomas";
-
+//
 //        int a = 2;
 //        int b = 2;
 //
