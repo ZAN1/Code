@@ -95,10 +95,10 @@ public class EveAdapter extends RecyclerView.Adapter<EveAdapter.holder>  {
     public void onBindViewHolder(holder holder, final int position){
 
     Item item = tritlist.getItems().get(position);
-    holder.price.setText(String.valueOf(item.getPrice()));
+    holder.price.setText(String.valueOf(item.getPrice() + " Isk"));
     holder.itemname.setText(item.getType().getName());
     holder.volume.setText( String.valueOf(item.getVolume()));
-        holder.total.setText((String.valueOf(item.getTotalPrice())));
+        holder.total.setText((String.valueOf(item.getTotalPrice() + " Iskgit status")));
      // EveimgType imgname = eveimgitem.getItems().get(position);
         //imgname.g
 
