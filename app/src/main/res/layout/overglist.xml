@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/overlist"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+
+        android:layout_weight="1"
+        android:text="name of group"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:padding="2dp"
+        android:background="#003300"
+        android:textColor="#C0C0C0"
+        android:textStyle="bold"
+        android:shadowColor="#000000"/>
+</LinearLayout>
